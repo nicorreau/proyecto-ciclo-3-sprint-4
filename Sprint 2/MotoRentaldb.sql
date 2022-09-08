@@ -18,17 +18,7 @@ DROP DATABASE IF EXISTS `moto_rental`;
 CREATE DATABASE IF NOT EXISTS `moto_rental` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `moto_rental`;
 
--- Volcando estructura para tabla moto_rental.alquiler
-DROP TABLE IF EXISTS `alquiler`;
-CREATE TABLE IF NOT EXISTS `alquiler` (
-  `id` int(11) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `fecha` datetime NOT NULL,
-  PRIMARY KEY (`id`,`username`,`fecha`) USING BTREE,
-  KEY `FK_usuario` (`username`),
-  CONSTRAINT `FK_motocicleta` FOREIGN KEY (`id`) REFERENCES `motocicleta` (`id`),
-  CONSTRAINT `FK_usuario` FOREIGN KEY (`username`) REFERENCES `usuario` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 -- Volcando datos para la tabla moto_rental.alquiler: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `alquiler` DISABLE KEYS */;
@@ -83,3 +73,16 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+
+
+-- Volcando estructura para tabla moto_rental.alquiler
+DROP TABLE IF EXISTS `alquiler`;
+CREATE TABLE IF NOT EXISTS `alquiler` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `fecha` datetime NOT NULL,
+  PRIMARY KEY (`id`,`username`,`fecha`) USING BTREE,
+  KEY `FK_usuario` (`username`),
+  CONSTRAINT `FK_motocicleta` FOREIGN KEY (`id`) REFERENCES `motocicleta` (`id`),
+  CONSTRAINT `FK_usuario` FOREIGN KEY (`username`) REFERENCES `usuario` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
