@@ -181,29 +181,29 @@
                     <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                                 <div class="validate"></div>
                             </div>
                             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico" data-rule="email" data-msg="Please enter a valid email" required>
                                 <div class="validate"></div>
                             </div>
                             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <input type="number" class="form-control" name="phone" id="phone" placeholder="Numero telefonico" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                                 <div class="validate"></div>
                             </div>
                             <div class="col-lg-4 col-md-6 form-group mt-3">
-                                <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <input type="date" name="date" class="form-control" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                                 <div class="validate"></div>
                             </div>
                             <div class="col-lg-4 col-md-6 form-group mt-3">
-                                <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <input type="datetime-local" class="form-control" name="time" id="time" placeholder="Tiempo" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                                 <div class="validate"></div>
                             </div>
 
                         </div>
                         <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
                             <div class="validate"></div>
                         </div>
                         <div class="mb-3">
@@ -217,6 +217,20 @@
                 </div>
             </section><!-- End Book A Table Section -->
         </div>
-
+        <hr>
+        <footer class="container py-1">
+            <div class="row">
+              <div class="col-12 col-md">
+                <small class="d-block mb-3 text-muted">&copy; 2022</small>
+              </div>
+                <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary" href="home.html">Home</a></li>
+                  <li><a class="link-secondary" href="registro.html">Registrese</a></li>
+                  <li><a class="link-secondary" href="index.html">Equipo</a></li>
+                  <li><a class="link-secondary" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
     </body>
 </html>
