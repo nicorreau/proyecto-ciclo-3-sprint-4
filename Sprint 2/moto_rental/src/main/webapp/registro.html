@@ -16,21 +16,29 @@
         <h1>MOTORENTAL </h1> 
         <img src="img/motos/logo moto rental.png" alt=""/>
     </div>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Rentar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="registro.html">Registrese</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" >Descuentos</a>
-                </li>
-
-            </ul>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html" tabindex="-1" aria-disabled="true">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalogo</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="registro.html">Registrese</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Equipo</a>
+            </li>
+        </ul>
+    </header>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -43,7 +51,6 @@
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Username</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba su nombre de usuario" required>
-                <div id="emailHelp" class="form-text">Escriba su nombre de usuario.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Contrasena</label>
@@ -52,22 +59,18 @@
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba su Nombre" required>
-                <div id="emailHelp" class="form-text">Escriba su Nombre.</div>
             </div><!-- comment -->
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Apellidos</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba sus apellidos" required>
-                <div id="emailHelp" class="form-text">Escriba sus Apellidos.</div>
             </div><!-- comment -->
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba su correo electronico" required>
-                <div id="emailHelp" class="form-text">escriba su email.</div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Saldo</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su saldo inicial" required>
-                <div id="emailHelp" class="form-text">Saldo inicial.</div>
             </div><!-- comment -->
 
 
@@ -75,6 +78,7 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Quiere ser Premium</label>
             </div>
+            <br>
             <button type="submit" class="btn btn-primary">Registrar</button>
         </form>
         </div>
@@ -88,7 +92,7 @@
                   <li><a class="link-secondary" href="home.html">Home</a></li>
                   <li><a class="link-secondary" href="registro.html">Registrese</a></li>
                   <li><a class="link-secondary" href="index.html">Equipo</a></li>
-                  <li><a class="link-secondary" href="#">Terms</a></li>
+                  <li><a class="link-secondary" href="about.html">Sobre Nosotros</a></li>
                 </ul>
               </div>
             </div>
