@@ -17,6 +17,7 @@ public class OperacionesBD {
     public static void main(String[]args){
         listarMotocicleta();
         //actualizarMotocicleta(2, "Suzuki Drx");
+        //insertarMotocicleta(id, marca, cilindraje, modelo, exclusiva, novedad);
     
     }
     
@@ -60,4 +61,19 @@ public class OperacionesBD {
             conn.desconectar();
        }
     }
+
+    public static void insertarMotocicleta(int id, String marca, String cilindraje, String modelo, int exclusiva, int novedad) {
+     DBConnection con = new DBConnection();
+     String sql = "INSERT INTO motocicleta (id, marca, cilindraje, modelo, exclusiva, novedad) VALUES"
+             + "('" + id + "','" + marca + "','" + cilindraje + "','" + modelo + "', '" + exclusiva + "','" + novedad + "')";
+     try {
+         Statement st = con.getConnection().createStatement();
+         st.executeUpdate(sql);
+     } catch (Exception ex) {
+         System.out.println(ex.getMessage());
+     } finally {
+         con.desconectar();
+     }
+ 
+ }
 }
