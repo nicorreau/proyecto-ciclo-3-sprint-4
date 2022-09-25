@@ -1,0 +1,13 @@
+.bg-login-imagen{
+    background: url("../img/logo-moto-rental.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    border: 0px;
+}
+
+.sizeDiv{
+    width: 40vw;
+    
+}

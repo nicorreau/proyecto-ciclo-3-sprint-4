@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+C:\Users\sebgo\Desktop\Proyecto-Ciclo-3-main\Sprint 2\.metadata\.plugins\org.eclipse.jdt.core
